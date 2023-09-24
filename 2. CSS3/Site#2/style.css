@@ -1,0 +1,28 @@
+.date {
+    font-family: 'Roboto', sans-serif;
+    color: #05b7b7;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    margin: 0px;
+}
+
+div.publish {
+    width: 60%;
+    height: 100%;
+    margin: 0px auto 0px auto;
+    background-color: #f9f5f5;
+}
+
+div.post {
+    padding: 20px 50px 10px 50px;
+}

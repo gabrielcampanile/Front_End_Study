@@ -1,0 +1,23 @@
+li>a {
+    color: red;
+}
+
+a[href='/notafiscal'] {
+    color: orange;
+}
+
+h1+h4 {
+    border: 4px dashed gray;
+}
+
+li:nth-of-type(2) {
+    color: purple;
+}
+
+li:nth-of-type(odd) {
+    color: green;
+}
+
+h1 {
+    color: darkgoldenrod;
+}

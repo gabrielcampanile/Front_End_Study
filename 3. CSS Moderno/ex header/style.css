@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.logo-rock {
+    width: 50px;
+}
+
+.logo-onebitcode {
+    width: 200px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button-header {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.button-header:hover {
+    border-color: red;
+}
