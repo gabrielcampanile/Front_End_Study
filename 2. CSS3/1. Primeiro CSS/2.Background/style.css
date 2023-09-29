@@ -1,0 +1,18 @@
+h1 {
+    color: #c859c8;
+    border-color: yellow;
+    border-width: 2px;
+    border-style: dashed;
+
+    border: 2px dashed yellow;
+}
+
+li {
+    color: #41c541;
+}
+
+body {
+    background-image: url('https://www.nasaspaceflight.com/wp-content/uploads/2017/12/NSF_20171219_170804.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
