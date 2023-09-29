@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Alistamento</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body id="a">
+    <header>
+        <a href="index.html">ALISTAMENTO online</a>
+    </header>
+    <h1>INSIRA SEUS DADOS</h1>
+    <form action="">
+        <section>
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="Nome completo">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="@marinhamil.br" autocomplete="off"> <br> <br>
+                <label for="pwd">Password:</label>
+                <input type="password" name="pwd" id="pwd">
+            </div>
+            <br>
+            <div>
+                <label for="bday">Data de nascimento:</label>
+                <input type="date" name="bday" id="bday"> <br> <br>
+            </div>
+            <div>
+                <label for="photo">Foto:</label>
+                <input type="file" name="photo" id="photo">
+            </div>
+            <br>
+            <div>
+                <label for="nationality">Nacionalidade:</label>
+                <select name="nationality" id="nationality">
+                    <option value="brazilian">Brasileira</option>
+                    <option value="russian">Russa</option>
+                    <option value="american">Americana</option>
+                </select> <br> <br>
+                Gênero:
+                <label for="male">M</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">F</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+            <br>
+        </section>
+        <aside>
+            <div>
+                <ul>Suas principais qualidades:</ul>
+                <li>
+                    <label for="int">Inteligência</label>
+                    <input type="checkbox" name="int" id="int" class="box"> |
+                </li>
+                <li>
+                    <label for="res">Resiliência</label>
+                    <input type="checkbox" name="res" id="res" class="box"> |
+                </li>
+                <li>
+                    <label for="fis">Preparo Físico</label>
+                    <input type="checkbox" name="fis" id="fis" class="box"> |
+                </li>
+                <li>
+                    <label for="ed">Educação</label>
+                    <input type="checkbox" name="ed" id="ed" class="box"> |
+                </li>
+            </div>
+            <br> <br>
+            <div>
+                <textarea name="description" id="description" cols="50" rows="7"
+                    placeholder="Por que você gostaria de servir?" maxlength="50"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar" class="submit">
+            </div>
+        </aside>
+    </form>
+</body>
+
+</html>

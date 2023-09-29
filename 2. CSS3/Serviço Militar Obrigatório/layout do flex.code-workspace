@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../CSS Moderno/layout do flex"
+		}
+	],
+	"settings": {
+		"[python]": {
+			"editor.defaultFormatter": "ms-python.autopep8"
+		},
+		"python.formatting.provider": "none"
+	}
+}

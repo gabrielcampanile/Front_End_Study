@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="flex.css">
+    <title>Flex Layout</title>
+</head>
+
+<body>
+    <div class="container">
+     
+        <section class="main-content">
+            <div class="border-solid shadow-xl shadow-slate-400 rounded-lg w-48 m-2 flex flex-col p-2 justify-between">
+                <img src="marinha.jpeg" alt="marinha" class="hover:scale-110 duration-300 my-3 rounded-lg">
+                <h1 class="paragraph">MARINHA</h1>
+            </div>
+            <div class="border-solid shadow-xl shadow-slate-400 rounded-lg w-48 m-2 flex flex-col p-2 justify-between">
+                <img src="exército.jpeg" alt="exército" class="hover:scale-110 duration-300 my-3 rounded-lg">
+                <h1 class="paragraph">EXÉRCITO</h1>
+            </div>
+            <div class="border-solid shadow-xl shadow-slate-400 rounded-lg w-48 m-2 flex flex-col p-2 justify-between">
+                <img src="aeronáutica.jpeg" alt="aeronáutica" class="hover:scale-110 duration-300 my-3 rounded-lg">
+                <h1 class="paragraph">AERONÁUTICA</h1>
+            </div>
+        </section>
+            <div class="video">
+                <!-- 
+                    <iframe width="500" height="280" src="https://www.youtube.com/embed/qz-Vm8YppY4" title="1 HORA DE CANÇÕES DE TFM + DE 50 CANÇÕES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                -->
+                <video width="610" height="350" controls>
+                    <source src="TFM.mp4" type="video/mp4">
+                </video>
+            </div>
+        <footer class="footer">
+            <p class="paragraph">BRASIL!</p>
+        </footer>
+    </div>
+</body>
+
+</html>

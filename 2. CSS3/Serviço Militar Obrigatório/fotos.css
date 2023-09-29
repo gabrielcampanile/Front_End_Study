@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 1000;
+}
+
+header a {
+    font-size: x-large;
+    margin: 0 auto 0 80px;
+    text-decoration: none;
+}
+
+header a#title:hover {
+    margin: 0px auto 0px 80px;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+header nav a {
+    font-size: x-small;
+    color: white;
+    margin: 0px;
+    text-decoration: underline;
+}
+
+header {
+    background-color: black;
+    border-color: black;
+    border-width: 0px 5px 0px 40px;
+    border-style: solid;
+    padding: 22px 5px 1px 5px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.main-content {
+    /* background-image: url('fundo.png'); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.image {
+    height: 100vh;
+    border-radius: 5px;
+    width: 300px;
+    height: auto;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}

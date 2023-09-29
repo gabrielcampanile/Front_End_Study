@@ -1,0 +1,54 @@
+body#b {
+    background-image: url('FA.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -900px;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 1000;
+}
+
+header {
+    background-color: black;
+    border: solid black 20px;
+}
+
+header a {
+    color: white;
+    margin: 0px auto 0px 60px;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+header a:hover {
+    margin: 0px auto 0px 60px;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+body {
+    margin: 0px;
+    color: white
+}
+
+main {
+    margin: 300px auto 10px -40px;
+    text-align: center;
+}
+
+.submit {
+    text-shadow: 30%;
+    border-radius: 10px;
+    background-color: rgb(192, 240, 192);
+    padding: 10px;
+}
+
+.submit:hover {
+    background-color: rgb(128, 252, 4);
+    transition-duration: 0.4s;
+
+}

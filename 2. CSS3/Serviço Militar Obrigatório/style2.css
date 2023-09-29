@@ -1,0 +1,72 @@
+body#a {
+    background-image: url(https://i.ytimg.com/vi/LlWqeTs3-jE/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 10px;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 1000;
+}
+
+header {
+    background-color: black;
+    border: solid black 20px;
+}
+
+header a {
+    color: white;
+    margin: 0px auto 0px 60px;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+header a:hover {
+    margin: 0px auto 0px 60px;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+body {
+    margin: 0px;
+    color: white;
+}
+
+h1 {
+    margin-top: 90px;
+    margin-left: 70px;
+}
+
+section {
+    margin-left: 70px;
+}
+
+aside {
+    margin-right: 70px;
+    text-align: right;
+    margin-top: -348px;
+    list-style: none;
+}
+
+.box {
+    color: black;
+}
+
+textarea {
+    color: black;
+}
+
+.submit {
+    text-shadow: 30%;
+    border-radius: 10px;
+    background-color: rgb(192, 240, 192);
+    padding: 10px;
+}
+
+.submit:hover {
+    background-color: rgb(128, 252, 4);
+    transition-duration: 0.4s;
+
+}

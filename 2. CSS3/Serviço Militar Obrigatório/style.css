@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 1000;
+}
+
+header a {
+    font-size: x-large;
+    margin: 0 auto 0 80px;
+    text-decoration: none;
+}
+
+header a#title:hover {
+    margin: 0px auto 0px 80px;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+header nav a {
+    font-size: x-small;
+    color: white;
+    margin: 0px;
+    text-decoration: underline;
+}
+
+header {
+    background-color: black;
+    border-color: black;
+    border-width: 0px 5px 0px 40px;
+    border-style: solid;
+    padding: 22px 5px 1px 5px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+body#index {
+    background-image: url('https://alistamento.eb.mil.br/assets/images/intro/wallpaper1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 12.5%;
+}
+
+body h1 {
+    text-align: center;
+    width: 50%;
+    margin: 200px auto 50px auto;
+    font-size: 60px;
+    font-weight: bolder;
+    letter-spacing: 8px;
+}
+
+section a#b1 {
+    text-align: center;
+    margin: 50px auto 50px 480px;
+    width: 50%;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+section a#b1:hover {
+    text-align: center;
+    margin: 50px auto 50px 480px;
+    width: 50%;
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    box-shadow: black 10px transparent;
+}
+
+section a#b2 {
+    text-align: center;
+    margin: 50px auto 50px 10px;
+    width: 50%;
+    padding: 10px 50px 10px 50px;
+    background-color: white;
+    color: black;
+    font-style: bold;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+section a#b2:hover {
+    text-align: center;
+    margin: 50px auto 50px 10px;
+    width: 50%;
+    padding: 10px 50px 10px 50px;
+    background-color: black;
+    color: white;
+    font-style: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+section ul li {
+    display: inline;
+}
