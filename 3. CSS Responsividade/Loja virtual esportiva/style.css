@@ -4,51 +4,64 @@
     box-sizing: border-box;
     font-size: 20px;
 }
+
 .container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 .header {
     width: 100%;
     min-height: 40px;
-    background-color:#292929;
+    background-color: #292929;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 15px 30px;
     gap: 8px 15px;
 }
+
 .logoNavBar {
-    width: 180px;
+    width: 250px;
 }
+
 .headerBtnGroup {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
+
 .navBtn {
-    font-size: 16px;
-    padding: 6px;
-    background-color: transparent;
+    font-size: 20px;
+    padding: 10px 32px;
     border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
     color: white;
     cursor: pointer;
     transition: 0.4s;
 }
+
 .navBtn:hover {
-    border-bottom: 2px solid black;
+    /* font-weight: 500; */
+    color: black;
+    background-color: #fddb01;
 }
+
 .sectionTitle {
     font-size: 26px;
     font-family: Arial, Helvetica, sans-serif;
-    text-align:  center;
-    padding-top: 20px;
+    text-align: center;
+    padding-top: 30px;
 }
+
 .sectionDescription {
     text-align: center;
     color: #383838;
+    padding-bottom: 20px;
 }
+
 .gridContainer {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -56,37 +69,48 @@
     padding: 20px;
     flex: 1 0 auto;
 }
+
 .mainContent {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
     grid-area: mainContent;
 }
+
 .categoryCard {
+    background-color: white;
     width: 280px;
     height: 380px;
     border: 2px solid transparent;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: 0.4s;
     cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(107, 114, 128, 0.5);
 }
+
 .categoryCard:hover {
-    border-color: black;
+    transform: scale(1.1);
+    transition-duration: 300ms;
 }
+
 .mainCardImg {
     width: 100%;
     height: 180px;
-    border-radius: 10px;
+    border-radius: 12px;
 }
+
 .mainCategoryCardTitle {
     font-family: Arial, Helvetica, sans-serif;
     padding: 6px;
 }
+
 .mainCategoryCardDescription {
     padding: 6px;
 }
+
 .sidebarContent {
+    margin-left: 25px;
     background-color: #383838;
     color: white;
     padding: 16px;
@@ -97,28 +121,34 @@
     grid-area: sidebarContent;
     gap: 20px;
 }
+
 .sidebarCard {
     width: 75%;
-    border: 1px solid transparent;
-    border-radius: 10px;
+    border: 2px solid transparent;
+    border-radius: 14px;
     transition: 0.5s;
     cursor: pointer;
 }
+
 .sidebarCard:hover {
-    border-color: gainsboro;
+    border: solid 2px gainsboro;
 }
+
 .sidebarCardImg {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 12px;
 }
+
 .sidebarCardTitle {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 10px;
 }
+
 .logoFooter {
-    width: 180px;
+    width: 250px;
 }
+
 .footer {
     width: 100%;
     min-height: 40px;
@@ -127,35 +157,64 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 15px 30px;
     gap: 15px;
 }
+
 .footerAnchor {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-decoration: none;
+    padding: 8px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.4s;
 }
-@media (max-width: 630px) {
-    .gridContainer {
-        grid-template-areas: 
-        "mainContent"
-        "sidebarContent";
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .sidebarContent {
-        min-width: auto;
-    }
-    .footerAnchor {
-        font-size: 19px;
+
+.footerAnchor:hover {
+    border-bottom: 2px solid #fddb01;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0px 4px 6px rgba(107, 114, 128, 0.5);
     }
 }
-@media (max-width: 463px) {
+
+@media (max-width: 768px) {
     .header {
         justify-content: center;
     }
     .footer {
         justify-content: center;
+    }
+}
+
+@media (max-width: 630px) {
+    .header {
+        justify-content: center;
+    }
+
+    .gridContainer {
+        grid-template-areas:
+            "mainContent"
+            "sidebarContent";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sidebarContent {
+        min-width: auto;
+    }
+
+    .footerAnchor {
+        font-size: 19px;
     }
 }
