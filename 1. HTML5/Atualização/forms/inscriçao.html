@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+    <h1>Formulário de Inscrição</h1>
+    <form action="">
+        <!-- Campo de Nome -->
+        <label for="nome">Nome:</label> <br>
+        <input type="text" name="nome" id="nome" required>
+        <br><br>
+
+        <!-- Campo de E-mail -->
+        <label for="email">E-mail:</label> <br>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+
+        <!-- Campo de WhatsApp -->
+        <label for="number">WhatsApp:</label> <br>
+        <input type="number" name="number" id="number">
+        <br><br>
+
+        <!-- Campo de radio -->
+        <label>Área de atuação:</label> <br>
+        <input type="radio" name="area" id="desenvolvimento" value="desenvolvimento">
+        <label for="desenvolvimento">Desenvolvimento</label>
+        <input type="radio" name="area" id="QA" value="QA">
+        <label for="QA">Quality Assurance</label>
+        <input type="radio" name="area" id="dados" value="dados">
+        <label for="dados">Análise de Dados</label>
+        <input type="radio" name="area" id="infraestrutura" value="infraestrutura">
+        <label for="infraestrutura">Infraestrutura</label>
+        <br><br>
+
+        <!-- Campo de texto -->
+        <label for="obs">Observações:</label> <br>
+        <textarea name="obs" id="obs" cols="30" rows="3"></textarea>
+        <br><br>
+
+        <!-- Campo de checkbox -->
+        <input type="checkbox" name="checkbox" id="checkbox" value="sim">
+        <label for="checkbox">Desejo receber novidades e ofertas por email.</label>
+        <br><br>
+
+        <!-- Botão de envio -->
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Pontos abordados na aula:
+A caixa de informação recebeu o atributo role="alert" para informar aos usuários que ela contém uma mensagem importante.
+Os campos do formulário obrigatórios receberam o atributo aria-required="true" para indicar que são campos de preenchimento obrigatório.
+Os campos do formulário também receberam o atributo aria-label para fornecer uma descrição personalizada para os leitores de tela, tornando a interação mais clara.
+As caixas de mensagem de sucesso e erro receberam o atributo role="status" e aria-live para notificar aos usuários sobre ações importantes que ocorrem dinamicamente.

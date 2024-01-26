@@ -1,0 +1,8 @@
+<header>: Define o cabeçalho da página.
+<nav>: Define uma seção de navegação.
+<main>: Define o conteúdo principal da página.
+<section>: Define uma seção temática da página.
+<article>: Define um conteúdo independente e completo dentro de uma página.
+<aside>: Define um conteúdo relacionado que pode ser considerado como um "sidebar" ou uma informação complementar.
+<footer>: Define o rodapé da página.
+<address>: Define informações de contato.
