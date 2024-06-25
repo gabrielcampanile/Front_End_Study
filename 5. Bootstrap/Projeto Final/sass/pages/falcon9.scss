@@ -1,0 +1,128 @@
+.container00 {
+    &.container05 {
+        background-image: url(../../images/falcon9/01.jpg);
+    }
+    &.container06 {
+        background-image: url(../../images/falcon9/02.jpg);
+    }
+    &.carrossel01 {
+        background-image: url(../../images/falcon9/03.jpg);
+    }
+    &.carrossel02 {
+        background-image: url(../../images/falcon9/04.jpg);
+    }
+    &.carrossel03 {
+        background-image: url(../../images/falcon9/05.jpg);
+    }
+    &.carrossel04 {
+        background-image: url(../../images/falcon9/06.jpg);
+    }
+    &.carrossel05 {
+        background-image: url(../../images/falcon9/07.jpg);
+    }
+    &.container07 {
+        background-image: url(../../images/falcon9/08.jpg);
+    }
+}
+
+.titleFalcon9 {
+    font-size: 90px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 514;
+}
+
+.titleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+}
+
+.numbers {
+    background-color: black;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .titleNumb {
+        font-size: 90px;
+    }
+
+    .subtitleNumb {
+        font-size: 20px;
+    }
+}
+
+.falcon9Desc {
+    width: auto;
+}
+
+.containerFalcon9Desc {
+    display: grid;
+    height: 90vh;
+    align-items: center;
+    justify-content: left;
+}
+
+#overViewPosition {
+    width: 500px;
+    margin-left: 13%;
+    padding-top: 15%;
+}
+
+.carrosselSlide {
+    img {
+        height: 100vh;
+    }
+}
+
+.carousselText {
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .numbers {
+        .titleNumb {
+            font-size: 80px;
+        }
+
+        .subtitleNumb {
+            font-size: 18px;
+        }
+    }
+
+    .falcon9Desc {
+        width: auto;
+    }
+
+    #overViewPosition {
+        padding-top: 30%;
+    }
+}
+
+@media (max-width: 575px) {
+    .numbers {
+        height: 60vh;
+    }
+
+    #overViewPosition {
+        width: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .titleFalcon9 {
+        font-size: 50px;
+    }
+
+    .falcon9Desc {
+        font-size: 18px;
+        line-height: auto;
+    }
+
+    .subtitleFalcon9 {
+        font-size: 16px;
+    }
+}

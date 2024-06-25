@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- CSS Customizado -->
+     <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .scrollSpy {
+            height: 570px;
+            overflow: auto;
+            position: relative;
+            font-size: 25px;
+            background-color: rgb(166, 137, 137);
+        }
+     </style>
+
+    <title>ScrollSpy</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-3">
+                <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item-1">Item 1</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                        </nav>
+                        <a class="nav-link" href="#item-2">Item 2</a>
+                        <a class="nav-link" href="#item-3">Item 3</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                        </nav>
+                        <a class="nav-link" href="#item-4">Item 4</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-4-1">Item 4-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-4-2">Item 4-2</a>
+                            <a class="nav-link ms-3 my-1" href="#item-4-3">Item 4-3</a>
+                        </nav>
+                    </nav>
+                </nav>
+            </div>
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0" class="col scrollSpy">
+                <h2 id="item-1">Item 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus eos doloremque amet sunt possimus cupiditate minus omnis sint quaerat voluptate qui, ullam accusantium deleniti accusamus a. Eos a tempora dicta quam enim sit porro ipsa eius pariatur. Ratione quos nobis dignissimos officia reprehenderit facere aperiam in, quo deserunt perferendis?
+                </p>
+                <h3 id="item-1-1">Item 1-1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus eos doloremque amet sunt possimus cupiditate minus omnis sint quaerat voluptate qui, ullam accusantium deleniti accusamus a. Eos a tempora dicta quam enim sit porro ipsa eius pariatur. Ratione quos nobis dignissimos officia reprehenderit facere aperiam in, quo deserunt perferendis?
+                </p>
+                <h3 id="item-1-2">Item 1-2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus eos doloremque amet sunt possimus cupiditate minus omnis sint quaerat voluptate qui, ullam accusantium deleniti accusamus a. Eos a tempora dicta quam enim sit porro ipsa eius pariatur. Ratione quos nobis dignissimos officia reprehenderit facere aperiam in, quo deserunt perferendis?
+                </p>
+                <h2 id="item-2">Item 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus eos doloremque amet sunt possimus cupiditate minus omnis sint quaerat voluptate qui, ullam accusantium deleniti accusamus a. Eos a tempora dicta quam enim sit porro ipsa eius pariatur. Ratione quos nobis dignissimos officia reprehenderit facere aperiam in, quo deserunt perferendis?
+                </p>
+                <h2 id="item-3">Item 3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus eos doloremque amet sunt possimus cupiditate minus omnis sint quaerat voluptate qui, ullam accusantium deleniti accusamus a. Eos a tempora dicta quam enim sit porro ipsa eius pariatur. Ratione quos nobis dignissimos officia reprehenderit facere aperiam in, quo deserunt perferendis?
+                </p>
+                <h3 id="item-3-1">Item 3-1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus eos doloremque amet sunt possimus cupiditate minus omnis sint quaerat voluptate qui, ullam accusantium deleniti accusamus a. Eos a tempora dicta quam enim sit porro ipsa eius pariatur. Ratione quos nobis dignissimos officia reprehenderit facere aperiam in, quo deserunt perferendis?
+                </p>
+                <h3 id="item-3-2">Item 3-2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus eos doloremque amet sunt possimus cupiditate minus omnis sint quaerat voluptate qui, ullam accusantium deleniti accusamus a. Eos a tempora dicta quam enim sit porro ipsa eius pariatur. Ratione quos nobis dignissimos officia reprehenderit facere aperiam in, quo deserunt perferendis?
+                </p>
+                <h2 id="item-4">Item 4</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia consequatur quos corporis dicta, quia nulla voluptatem, delectus ducimus voluptas totam est. Maiores fugiat, modi non repellendus incidunt cumque laboriosam optio libero iure labore aliquid, dolore saepe enim dolores, veritatis facere voluptatum praesentium error eum earum aut eius nihil dicta.
+                </p>
+                <h3 id="item-4-1">Item 4-1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus eos doloremque amet sunt possimus cupiditate minus omnis sint quaerat voluptate qui, ullam accusantium deleniti accusamus a. Eos a tempora dicta quam enim sit porro ipsa eius pariatur. Ratione quos nobis dignissimos officia reprehenderit facere aperiam in, quo deserunt perferendis?
+                </p>
+                <h3 id="item-4-2">Item 4-2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus eos doloremque amet sunt possimus cupiditate minus omnis sint quaerat voluptate qui, ullam accusantium deleniti accusamus a. Eos a tempora dicta quam enim sit porro ipsa eius pariatur. Ratione quos nobis dignissimos officia reprehenderit facere aperiam in, quo deserunt perferendis?
+                </p>
+                <h3 id="item-4-3">Item 4-3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus eos doloremque amet sunt possimus cupiditate minus omnis sint quaerat voluptate qui, ullam accusantium deleniti accusamus a. Eos a tempora dicta quam enim sit porro ipsa eius pariatur. Ratione quos nobis dignissimos officia reprehenderit facere aperiam in, quo deserunt perferendis?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Scrollspy -->
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar-example'
+        })
+    </script>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

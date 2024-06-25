@@ -1,0 +1,109 @@
+.header {
+    font-size: 12px;
+    font-weight: bold;
+
+    #navItem {
+        &:hover {
+            color: $link-hover;
+        }
+    }
+}
+
+.container00 {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.arrowDown {
+    display: inline-block;
+    width: 90px;
+    margin-top: 5px;
+}
+
+.logoPc {
+    width: 240px;
+    margin-left: -10px;
+    margin-right: 40px;
+}
+
+#button {
+    padding: $padding-buttom;
+    border: 2px solid white;
+}
+
+.downloadDesc {
+    background-color: black;
+    height: 85vh;
+    padding-top: 240px;
+
+    button {
+        border: 2px solid white;
+        margin: 10px;
+    }
+}
+
+.emailObc {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+
+    &:hover {
+        color: $link-hover;
+        border-bottom: 1px solid $link-hover;
+    }
+}
+
+.footer {
+    background-color: black;
+    height: 15vh;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: $link-hover;
+        }
+    }
+
+    .copyOBC {
+        color: $copy-color;
+    }
+}
+
+@media (max-widht: 449px) {
+    .downloadDesc {
+        button {
+            margin: 10px 0px;
+        }
+    }
+}
+
+@media (max-widht: 405px) {
+    .logoPc {
+        width: 180px;
+        margin-top: 15px
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}
+
+@media (max-widht: 350px) {
+    .logoPc {
+        width: 150px;
+        margin-top: 15px
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}

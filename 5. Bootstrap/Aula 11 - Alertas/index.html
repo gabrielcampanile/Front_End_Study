@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 30px;
+            padding: 10px;
+        }
+    </style>
+
+    <title>Alertas</title>
+</head>
+
+<body>
+    <div class="text-center">
+        <h1>Alertas</h1>
+        <a href="https://getbootstrap.com/docs/5.1/components/alerts/" target="_blank"><b>Documentação Completa</b></a>
+        <hr>
+    </div>
+
+    <div class="alertas">
+        <h1><u>Alertas Padrão</u></h1>
+        <br>
+        <div class="alert alert-primary" role="alert">
+            A simple primary alert—check it out!
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            A simple secondary alert—check it out!
+        </div>
+        <div class="alert alert-success" role="alert">
+            A simple success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            A simple danger alert—check it out!
+        </div>
+        <div class="alert alert-warning" role="alert">
+            A simple warning alert—check it out!
+        </div>
+        <div class="alert alert-info" role="alert">
+            A simple info alert—check it out!
+        </div>
+        <div class="alert alert-light" role="alert">
+            A simple light alert—check it out!
+        </div>
+        <div class="alert alert-dark" role="alert">
+            A simple dark alert—check it out!
+        </div>
+        <button id="ToggleButton1" onclick="showSection('textForToggleButton1')" class="btn btn-danger">Mostrar Elementos</button>
+        <pre style="background-color: gray; display: none;" class="mt-4 elementJs" id="textForToggleButton1">
+            <code class="language-html element hljs language-xml">
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary"</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-light"</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-dark"</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code>
+        </pre>
+        <br>
+        <hr>
+    </div>
+
+    <div class="botão">
+        <h1><u>Alertas com botão</u></h1>
+        <br>
+        <div id="liveAlertPlaceholder">Está gostando da OneBitCode? (Aqui o bootstrap fornece o JavaScript)</div>
+        <button type="button" class="btn btn-primary" id="liveAlertBtn">Sim!</button>
+
+        <pre style="background-color: gray" class="mt-4 elementJs pt-3">
+            <code class="language-html element hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"liveAlertPlaceholder"</span>&gt;</span>Está gostando da OneBitCode?<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"liveAlertBtn"</span>&gt;</span>Sim!<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code>
+        </pre>
+
+        <h2>Parte do JS</h2>
+        <pre style="background-color: gray" class="mt-4 elementJs pt-3">
+            <code class="language-js element hljs language-javascript">document.getElementById(<span class="hljs-string">'liveAlertBtn'</span>).addEventListener(<span class="hljs-string">'click'</span>, function () {
+                var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                var alertTrigger = document.getElementById('liveAlertBtn')
+
+                function alert(message, type) {
+                    var wrapper = document.createElement('div')
+                    wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+                    alertPlaceholder.append(wrapper)
+                }
+
+                if (alertTrigger) {
+                    alertTrigger.addEventListener('click', function () {
+                        alert('Muito bom programador, você vai ter muito sucesso na carreira!', 'success')
+                    })
+                }
+                    });</code>
+        </pre>
+        
+        <br>
+        <hr>
+    </div>
+
+    <div class="icons">
+        <h1><u>Alertas com ícones</u></h1>
+        <br>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </symbol>
+            <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+            </symbol>
+            <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </symbol>
+        </svg>
+                      
+        <div class="alert alert-primary d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+            <div>
+                An example alert with an icon
+            </div>
+        </div>
+        <div class="alert alert-success d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+            <div>
+                An example success alert with an icon
+            </div>
+        </div>
+        <div class="alert alert-warning d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            <div>
+                An example warning alert with an icon
+            </div>
+        </div>
+        <div class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            <div>
+                An example danger alert with an icon
+            </div>
+        </div>
+
+        <button id="ToggleButton2" onclick="showSection('textForToggleButton2')" class="btn btn-danger">Mostrar Elementos</button>
+        
+        <pre style="background-color: gray" class="mt-4 elementJs" id="textForToggleButton2">        
+            <code class="language-html element hljs language-xml">
+                &lt;svg xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+                    &lt;symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16"&gt;
+                        &lt;path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/&gt;
+                    &lt;/symbol&gt;
+                    &lt;symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16"&gt;
+                        &lt;path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/&gt;
+                    &lt;/symbol&gt;
+                    &lt;symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16"&gt;
+                        &lt;path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/&gt;
+                    &lt;/symbol&gt;
+                &lt;/svg&gt;
+
+                &lt;div class="alert alert-primary d-flex align-items-center" role="alert"&gt;
+                    &lt;svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"&gt;&lt;use xlink:href="#info-fill"/&gt;&lt;/svg&gt;
+                    &lt;div&gt;
+                        An example alert with an icon
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="alert alert-success d-flex align-items-center" role="alert"&gt;
+                    &lt;svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"&gt;&lt;use xlink:href="#check-circle-fill"/&gt;&lt;/svg&gt;
+                    &lt;div&gt;
+                        An example success alert with an icon
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="alert alert-warning d-flex align-items-center" role="alert"&gt;
+                    &lt;svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"&gt;&lt;use xlink:href="#exclamation-triangle-fill"/&gt;&lt;/svg&gt;
+                    &lt;div&gt;
+                        An example warning alert with an icon
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="alert alert-danger d-flex align-items-center" role="alert"&gt;
+                    &lt;svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"&gt;&lt;use xlink:href="#exclamation-triangle-fill"/&gt;&lt;/svg&gt;
+                    &lt;div&gt;
+                        An example danger alert with an icon
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+    
+        <br>
+        <hr>
+    </div>
+
+    <div class="disapear">
+        <h1><u>Alertas que somem</u></h1>
+        <br>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <button id="ToggleButton3" onclick="showSection('textForToggleButton3')" class="btn btn-danger">Mostrar Elementos</button>
+        
+        <pre style="background-color: gray" class="mt-4 elementJs" id="textForToggleButton3">        
+            <code class="language-html element hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-warning alert-dismissible fade show"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"alert"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Holy guacamole!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> You should check in on some of those fields below.
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-close"</span> <span class="hljs-attr">data-bs-dismiss</span>=<span class="hljs-string">"alert"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code>
+        </pre>
+        
+    </div>
+
+
+    <!-- Script -->
+    <script>
+        function showSection(sectionId, buttonId) {
+            // Seleciona a seção pelo ID e altera o estilo de exibição para 'block'
+            var section = document.getElementById(sectionId);
+            var button = document.getElementById(sectionId.replace('textForToggleButton', 'ToggleButton'));
+            console.log(button);
+            
+            if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block';
+                button.textContent = 'Esconder Elementos'; // Altera o texto do botão para 'Esconder Elementos'
+            } else {
+                section.style.display = 'none';
+                button.textContent = 'Mostrar Elementos'; // Altera o texto do botão para 'Mostrar Elementos'
+            } 
+        }
+
+        var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+        var alertTrigger = document.getElementById('liveAlertBtn')
+
+        function alert(message, type) {
+            var wrapper = document.createElement('div')
+            wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+            alertPlaceholder.append(wrapper)
+        }
+
+        if (alertTrigger) {
+            alertTrigger.addEventListener('click', function () {
+                alert('Muito bom programador, você vai ter muito sucesso na carreira!', 'success')
+            })
+        }
+    </script>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
